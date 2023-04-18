@@ -59,7 +59,30 @@ OBS: A imagem é apenas uma orientação, pode apresentar diferenças entre layo
 
 >Valide a calibração: Verifique se a calibração do sensor higrômetro é precisa, comparando as leituras do sensor com os valores de referência em diferentes condições de umidade e solo ao longo do tempo.
 
+O ajuste será feito na função map que funciona da seguinte forma.
 
+map(valor lido, mínimo1 v sensor, máximo v sensor, mínimo %, máximo %)
+
+'''
+//conversão da escala do valor analogico para escala de 0% a 100%
+void PorcentagemUmidade(int readValue){
+  // sensor - valor do solo, minimo sensor, maximo sensor, minimo e maximo em percentual
+  readValue = 100 - (map(readValue, 330, 1024, 0, 100));
+
+  Serial.print("Umidade do solo: "); 
+  Serial.print(readValue);
+  Serial.print("%");
+  Serial.println("");
+}
+'''
+
+Outra alternativa é trabalhar como uma escala manualmente, como neste exemplo.
+
+'''
+const int drySoil = 1010;   //solo muito seco
+const int dampSoil = 600;   //solo seco
+const int soakedSoil = 545; //solo encharcado
+'''
 ## 🛠️ Construído utilizando
 
 * [Arduino IDE 2.0.4](https://downloads.arduino.cc/arduino-ide/nightly/arduino-ide_nightly-latest_Windows_64bit.zip) - O IDE usado.
