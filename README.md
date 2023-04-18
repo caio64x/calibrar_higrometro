@@ -16,7 +16,7 @@ Objetivos:
 Estas são as instruções de ligações para a montagem do circuito, existem modelos deste sensor, onde pode variar qual o metodo de aferição, ou seja, pode medir resistência ou condução, sendo a condução de 1024 à 0 (Seco - Molhado) ou 0 à 1024 (Molhado - Seco) respectivamente.
 OBS: A imagem é apenas uma orientação, pode apresentar diferenças entre layot de peças ou modelos inseridos em comparação em seu modelo real.
 
-<img src="/calibrar_higrometro/calibrar_higrometro.png">
+<img src="/calibrar_higrometro/montagem.png">
 
 ### Materiais utilizados:
 ```
@@ -31,7 +31,7 @@ OBS: A imagem é apenas uma orientação, pode apresentar diferenças entre layo
 <table>
   <tr>
     <td>Higrômetro ou sensor de umidade de solo</td>
-    <td><img src="/calibrar_higrometro/calibrar_higrometro.jpeg" alt="sensor higrometro"></td>
+    <td><img src="/calibrar_higrometro/sensor_solo_higrometro.jpeg" alt="sensor higrometro"></td>
   </tr>
 </table>
 
